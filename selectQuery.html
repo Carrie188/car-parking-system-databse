@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>parking system</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <form method="post" action="php/selectAllQuery.php">
+        <fieldset>
+            <legend>Display All Customer</legend>
+            <input type="submit" value="submit">    
+        </fieldset>
+        </form>
+        <form method="post" action="php/selectLikeQuery.php">
+        <fieldset>
+            <legend>Display Customers whose name start with</legend>
+            <label>Customer Name Start With</label><input type="text" name="start">
+            <br>
+            <input type="submit" value="submit">    
+        </fieldset>
+        </form>
+        <form method="post" action="php/selectWhereQuery.php">
+        <fieldset>
+            <legend>Display Customers with Regular Card</legend>
+            <label>Is Regular Customer</label>
+            <input name="regular" type="radio" value="Y"><label>Yes</label>
+            <input name="regular" type="radio" value="N"><label>No</label>
+            <br>
+            <input type="submit" value="submit">    
+        </fieldset>
+        </form>
+    </body>
+</html>

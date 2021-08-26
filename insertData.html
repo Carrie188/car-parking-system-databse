@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Insert Data Into a Database</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form method="post" action="php/insertValues.php">
+      <fieldset>
+        <legend>Enter the information of the customer:</legend>
+
+        <label>Customer ID </label><input type="number" name="custId" /> <br />
+        <label>Customer Name</label><input type="text" name="cName" /> <br />
+        <label>Phone Number</label><input type="number" name="phoNum" /> <br />
+        <label>Register Time</label><input type="date" name="date">
+        <br />
+        <label>Is regular Customer</label><br />
+        <input name="regular" type="radio" value="Y" /> <label>Yes</label>
+        <br />
+        <input name="regular" type="radio" value="N" /> <label>No</label>
+        <br />
+
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <br />
+    <a href="index.html">Back to the homepage</a>
+  </body>
+</html>
